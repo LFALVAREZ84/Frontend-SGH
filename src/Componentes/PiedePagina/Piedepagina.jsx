@@ -12,7 +12,7 @@ function PiedePagina() {
         <h6 className='text-uppercase fw-bold mb-4'></h6>
         <p><a href="#!" className='text-center text-white'>Politicas generales del hotel</a></p>
         </Col>
-        <Col md="3" lg="3" xl="2" className='mx-auto mb-4'>
+        <Col md="3" lg="3" xl="3" className='mx-auto mb-4'>
         <h6 className='text-uppercase fw-bold mb-4'></h6>
         <Container>
               <p>
@@ -22,7 +22,7 @@ function PiedePagina() {
               </p>
         </Container>
         </Col>
-        <Col md="3" lg="3" xl="4" className='mx-auto mb-4'>
+        <Col md="3" lg="3" xl="3" className='mx-auto '>
         <h6 className='text-uppercase fw-bold mb-4'></h6>
               <p>
               Gral. Paz 576, San Miguel de Tucumán, Tucumán.
