@@ -3,15 +3,20 @@ footer{
     background-color:  #345b89;
 }
 
-a{
+p a{
     margin-left: 20px;
     margin-right: 20px;
     font-family: 'Lora', serif;
     text-decoration: none;
 }
 
+.text-white{
+    text-decoration: none;
+}
+
 p{
     font-family: 'Lora', serif;
+    text-decoration: none;
 }
 
 col {
