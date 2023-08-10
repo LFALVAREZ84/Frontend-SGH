@@ -13,7 +13,7 @@ const Navegador = () => {
       <Container fluid>
         <Navbar.Toggle aria-controls="navbar" />
         <Navbar.Collapse id="navbar">
-          <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
+          <Nav className="mx-auto" style={{ maxHeight: '100px' }} navbarScroll>
             <NavDropdown title="Habitaciones" id="navbarDropdown1">
               <NavDropdown.Item href="#action1">Handicap</NavDropdown.Item>
               <NavDropdown.Divider />
@@ -38,7 +38,7 @@ const Navegador = () => {
               <Container>
               <Row>
               <Col xs={6} md={3}>
-              <Image src="src\assets\img\logo.jpg" rounded />
+              <Image src="src\assets\img\Logo Hotel.jpg" rounded />
               </Col>
               </Row>
               </Container>
