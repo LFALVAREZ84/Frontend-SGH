@@ -62,8 +62,8 @@ const ContactoClientes = () => {
           <Card.Text>
             Para cualquier consulta o reserva, puedes contactarnos al siguiente número:
           </Card.Text>
-          <Card.Text className="fw-bold">Teléfono: +54 123 456 789</Card.Text>
-          <Button variant="primary">Llamar</Button>
+          <Card.Text className="fw-bold">Teléfono: +54 03814335687</Card.Text>
+          <Button variant="primary" href="tel:+54 03814335687">Llamar</Button>
         </Card.Body>
       </Card>
     </div>
