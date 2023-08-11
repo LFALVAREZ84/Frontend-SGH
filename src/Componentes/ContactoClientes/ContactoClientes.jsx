@@ -1,11 +1,12 @@
 import React from 'react';
-import { Form, FloatingLabel, Col, Row, Button } from 'react-bootstrap';
+import { Form, FloatingLabel, Col, Row, Button ,Card} from 'react-bootstrap';
 import './ContactoClientes.css'
 import MapaTucuman from '../Mapa/Mapa'
 
 const ContactoClientes = () => {
   return (
     <div className='form-container d-flex flex-column align-items-center'>
+      <h2 className='mb-4 text-white'>Aquí estamos!</h2>
       <MapaTucuman />
 
       <div className='logo-container text-center'>
@@ -55,7 +56,18 @@ const ContactoClientes = () => {
           </Button>
         </div>
       </Form>
+      <Card className="text-center mt-5">
+        <Card.Body>
+          <Card.Title>Contacto del Hotel</Card.Title>
+          <Card.Text>
+            Para cualquier consulta o reserva, puedes contactarnos al siguiente número:
+          </Card.Text>
+          <Card.Text className="fw-bold">Teléfono: +54 123 456 789</Card.Text>
+          <Button variant="primary">Llamar</Button>
+        </Card.Body>
+      </Card>
     </div>
+
   );
 };
 
