@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form,  FloatingLabel, Col, Row, Button } from 'react-bootstrap';
+import { Form, FloatingLabel, Col, Row, Button } from 'react-bootstrap';
 import './ContactoClientes.css'
 
 const ContactoClientes = () => {
@@ -40,7 +40,7 @@ const ContactoClientes = () => {
         </Form.Group>
 
         <div className='text-center'>
-          <Button variant="primary" type="submit">
+          <Button className='custom-button' variant='primary' type='submit'>
             Enviar Consulta
           </Button>
         </div>
