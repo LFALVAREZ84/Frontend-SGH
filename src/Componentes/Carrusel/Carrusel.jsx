@@ -9,7 +9,7 @@ const Carrusel = () => {
         <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
             <div className="carousel-item active">
-                <img src="/img/Frente hotel.jpg" className="d-block w-100" alt="Imagen del frente del hotel"/>
+                <img src="src\assets\img\Frente hotel.jpg" className="d-block w-100" alt="Imagen del frente del hotel"/>
             </div>
             <div className="carousel-item">
                 <img src="/img/Restaurante hotel.jpeg" className="d-block w-100"  alt="Imagen de Comida"/>
