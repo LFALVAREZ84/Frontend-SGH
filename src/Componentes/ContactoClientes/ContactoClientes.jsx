@@ -4,6 +4,7 @@ import { Form, InputGroup, FloatingLabel, Col, Row, Button } from 'react-bootstr
 const ContactoClientes = () => {
   return (
     <div className='d-flex justify-content-center'>
+      <h1>Escribinos</h1>
       <Form className='w-75'>
         <Row className="mb-3">
           <Col md={6}>
