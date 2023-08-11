@@ -1,11 +1,11 @@
 import React from 'react';
-import { Form, FloatingLabel, Col, Row, Button } from 'react-bootstrap';
-import './ContactoClientes.css';
+import { Form,  FloatingLabel, Col, Row, Button } from 'react-bootstrap';
+import './ContactoClientes.css'
 
 const ContactoClientes = () => {
   return (
     <div className='form-container d-flex flex-column align-items-center'>
-      <h1 className='mb-4'>Escribinos</h1>
+      <h1 className='mb-4 text-white'>Escribinos</h1>
       <Form className='w-75'>
         <Row className="mb-3">
           <Col md={6}>
