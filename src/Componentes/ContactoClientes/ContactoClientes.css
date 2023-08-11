@@ -1,0 +1,7 @@
+.form-container {
+    background-image: url(../../../public/img/cornerstone-header-bg.jpg); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  

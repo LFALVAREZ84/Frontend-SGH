@@ -1,9 +1,10 @@
 import React from 'react';
-import { Form, InputGroup, FloatingLabel, Col, Row, Button } from 'react-bootstrap';
+import { Form, FloatingLabel, Col, Row, Button } from 'react-bootstrap';
+import './ContactoClientes.css';
 
 const ContactoClientes = () => {
   return (
-    <div className='d-flex flex-column align-items-center'>
+    <div className='form-container d-flex flex-column align-items-center'>
       <h1 className='mb-4'>Escribinos</h1>
       <Form className='w-75'>
         <Row className="mb-3">
