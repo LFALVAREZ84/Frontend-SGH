@@ -1,7 +1,11 @@
 import React from 'react';
 import { Form, FloatingLabel, Col, Row, Button ,Card} from 'react-bootstrap';
-import './ContactoClientes.css'
-import MapaTucuman from '../Mapa/Mapa'
+import './ContactoClientes.css';
+import MapaTucuman from '../Mapa/Mapa';
+import {useFormik} from 'formik';
+import * as Yup  from 'yup';
+import clsx from 'clsx';
+
 
 const ContactoClientes = () => {
   return (
@@ -16,7 +20,7 @@ const ContactoClientes = () => {
           className='logo-img'
         />
       </div>
-      <h1 className='mb-4 text-white'>Escribinos</h1>
+      <h3 className='mb-4 text-white'>Escribinos</h3>
       <Form className='w-75'>
         <Row className="mb-3">
           <Col md={6}>
@@ -67,8 +71,8 @@ const ContactoClientes = () => {
         </Card.Body>
       </Card>
     </div>
-
-  );
+    
+    );
 };
 
 export default ContactoClientes;
