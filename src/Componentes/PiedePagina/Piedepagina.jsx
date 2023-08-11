@@ -16,13 +16,13 @@ function PiedePagina() {
         <h6 className='text-uppercase fw-bold mb-4'></h6>
         <Container>
               <p>
-                <a href='#!' className='img'>
+                <a href='...' className='img'>
                   <img src='src\assets\img\Logo Hotel.jpg'/>
                 </a>
               </p>
         </Container>
         </Col>
-        <Col md="3" lg="3" xl="3" className='mx-auto '>
+        <Col md="3" lg="3" xl="3" className='mx-auto mb-4'>
         <h6 className='text-uppercase fw-bold mb-4'></h6>
               <p>
               Gral. Paz 576, San Miguel de Tucumán, Tucumán.
