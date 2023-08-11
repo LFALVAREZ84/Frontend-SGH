@@ -21,3 +21,10 @@
     border-color: #060c5c; /* Color del borde del botón al pasar el mouse */
   }
   
+.logo-container {
+    margin-bottom: 20px; /* Espaciado desde el logo */
+  }
+  
+  .logo-img {
+    max-width: 250px; /* Tamaño máximo del logo */
+  }

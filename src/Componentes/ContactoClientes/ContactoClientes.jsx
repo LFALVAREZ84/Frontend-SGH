@@ -5,6 +5,13 @@ import './ContactoClientes.css'
 const ContactoClientes = () => {
   return (
     <div className='form-container d-flex flex-column align-items-center'>
+      <div className='logo-container text-center'>
+        <img
+          src='../../../public/img/logo_RHR (1).jpg' // Ruta a tu imagen de logo
+          alt='Logo del hotel'
+          className='logo-img'
+        />
+      </div>
       <h1 className='mb-4 text-white'>Escribinos</h1>
       <Form className='w-75'>
         <Row className="mb-3">
