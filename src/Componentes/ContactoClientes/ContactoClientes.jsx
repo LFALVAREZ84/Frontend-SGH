@@ -1,54 +1,50 @@
 import React from 'react';
-import { Form, InputGroup, FloatingLabel, Col, Row } from 'react-bootstrap';
-
+import { Form, InputGroup, FloatingLabel, Col, Row, Button } from 'react-bootstrap';
 
 const ContactoClientes = () => {
-  return (<>
+  return (
     <div className='d-flex justify-content-center'>
-      <Form>
-        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-          <Form>
-            <br />
-            <Row>
-              <Col>
-                <Form.Control placeholder="Nombre y Apellido" rows={6} />
-              </Col>
-              <Col>
-                <Form.Control placeholder="Email" rows={6} />
-              </Col>
-            </Row>
-            <br />
-
-            <Form.Group className="mb-3" controlId="Teléfono">
-
-              <Form.Control placeholder="Teléfono" />
+      <Form className='w-75'>
+        <Row>
+          <Col md={6}>
+            <Form.Group controlId="nombreApellido">
+              <Form.Control type="text" placeholder="Nombre y Apellido" />
             </Form.Group>
-
-            <Form.Group className="mb-3" controlId="Motivo">
-
-              <Form.Control placeholder="Motivo" />
+          </Col>
+          <Col md={6}>
+            <Form.Group controlId="email">
+              <Form.Control type="email" placeholder="Email" />
             </Form.Group>
-            <FloatingLabel controlId="floatingTextarea2" label="Su Comentario">
-        <Form.Control
-          as="textarea"
-          placeholder="Leave a comment here"
-          style={{ height: '200px' }}
-        />
-      </FloatingLabel>
+          </Col>
+        </Row>
 
-          </Form>
-
-
+        <Form.Group controlId="telefono">
+          <Form.Control type="tel" placeholder="Teléfono" />
         </Form.Group>
-        
 
+        <Form.Group controlId="motivo">
+          <Form.Control as="select" placeholder="Motivo">
+            <option value="" disabled selected>Selecciona un motivo</option>
+            <option value="consulta">Consulta</option>
+            <option value="reserva">Reserva</option>
+            <option value="queja">Queja</option>
+          </Form.Control>
+        </Form.Group>
+
+        <Form.Group controlId="comentario">
+          <FloatingLabel controlId="floatingTextarea2" label="Su Comentario">
+            <Form.Control as="textarea" style={{ height: '200px' }} />
+          </FloatingLabel>
+        </Form.Group>
+
+        <div className='text-center'>
+          <Button variant="primary" type="submit">
+            Enviar
+          </Button>
+        </div>
       </Form>
     </div>
-
-
-  </>
-
-  )
+  );
 };
 
 export default ContactoClientes;
