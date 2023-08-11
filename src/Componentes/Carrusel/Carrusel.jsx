@@ -1,5 +1,5 @@
 import React from 'react'
-import './../carrusel/carrusel.css';
+import './../Carrusel/stylecarrusel.css';
 import { Container } from 'react-bootstrap';
 
 const Carrusel = () => {
