@@ -1,10 +1,13 @@
 import React from 'react';
 import { Form, FloatingLabel, Col, Row, Button } from 'react-bootstrap';
 import './ContactoClientes.css'
+import MapaTucuman from '../Mapa/Mapa'
 
 const ContactoClientes = () => {
   return (
     <div className='form-container d-flex flex-column align-items-center'>
+      <MapaTucuman />
+
       <div className='logo-container text-center'>
         <img
           src='../../../public/img/logo_RHR (1).jpg' // Ruta a tu imagen de logo
