@@ -7,34 +7,14 @@ import ContactoClientes from './Componentes/ContactoClientes/ContactoClientes';
 function App() {
   
   return (
-
-  <main className='container-fluid border border-dark border-5'>
-   <BrowserRouter>
-   <div className='border border-5 n-5'>
-   <Routes>
-    
-  
-    
-    <Route path = "/ContactoClientes" element={<ContactoClientes/>}/>
-    
-   </Routes>
-      
-    </div>
-  
-   
-   
-   </BrowserRouter>
-  
-  <div className='border border-danger border-5 n-5'>
-
-  </div>
-  
-  
-  
-  
-  
-  
-  
+    <main className='container-fluid'>
+    <BrowserRouter>
+      <div className='border rounded p-4'> {/* Agrega clases para el borde estilizado */}
+        <Routes>
+          <Route path="/ContactoClientes" element={<ContactoClientes />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   </main>)
 }
 

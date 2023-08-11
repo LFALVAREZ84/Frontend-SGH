@@ -5,7 +5,7 @@ const ContactoClientes = () => {
   return (
     <div className='d-flex justify-content-center'>
       <Form className='w-75'>
-        <Row>
+        <Row className="mb-3">
           <Col md={6}>
             <Form.Group controlId="nombreApellido">
               <Form.Control type="text" placeholder="Nombre y Apellido" />
@@ -18,11 +18,11 @@ const ContactoClientes = () => {
           </Col>
         </Row>
 
-        <Form.Group controlId="telefono">
+        <Form.Group controlId="telefono" className="mb-3">
           <Form.Control type="tel" placeholder="Teléfono" />
         </Form.Group>
 
-        <Form.Group controlId="motivo">
+        <Form.Group controlId="motivo" className="mb-3">
           <Form.Control as="select" placeholder="Motivo">
             <option value="" disabled selected>Selecciona un motivo</option>
             <option value="consulta">Consulta</option>
@@ -31,7 +31,7 @@ const ContactoClientes = () => {
           </Form.Control>
         </Form.Group>
 
-        <Form.Group controlId="comentario">
+        <Form.Group controlId="comentario" className="mb-3">
           <FloatingLabel controlId="floatingTextarea2" label="Su Comentario">
             <Form.Control as="textarea" style={{ height: '200px' }} />
           </FloatingLabel>
@@ -48,3 +48,4 @@ const ContactoClientes = () => {
 };
 
 export default ContactoClientes;
+
