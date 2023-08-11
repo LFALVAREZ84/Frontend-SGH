@@ -28,15 +28,19 @@ const ContactoClientes = () => {
 
               <Form.Control placeholder="Motivo" />
             </Form.Group>
+            <FloatingLabel controlId="floatingTextarea2" label="Su Comentario">
+        <Form.Control
+          as="textarea"
+          placeholder="Leave a comment here"
+          style={{ height: '200px' }}
+        />
+      </FloatingLabel>
 
           </Form>
 
 
         </Form.Group>
-        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-
-          <Form.Control as="textarea" rows={3} />
-        </Form.Group>
+        
 
       </Form>
     </div>
