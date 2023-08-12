@@ -8,6 +8,14 @@ import clsx from 'clsx';
 
 
 const ContactoClientes = () => {
+  const ContactoSchema = Yup.object().shape({
+    nombreApellido: Yup.string().required('Campo requerido'),
+    email: Yup.string().email('Formato de correo electrónico inválido').required('Campo requerido'),
+    telefono: Yup.string().required('Campo requerido'),
+    motivo: Yup.string().required('Campo requerido'),
+    comentario: Yup.string().required('Campo requerido'),
+  });
+  
   return (
     <div className='form-container d-flex flex-column align-items-center'>
       <h2 className='mb-4 text-white'>Aquí estamos!</h2>
