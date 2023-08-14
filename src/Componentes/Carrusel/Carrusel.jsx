@@ -12,10 +12,10 @@ const Carrusel = () => {
                 <img src="src\assets\img\Frente hotel.jpg" className="d-block w-100" alt="Imagen del frente del hotel"/>
             </div>
             <div className="carousel-item">
-                <img src="/img/Restaurante hotel.jpeg" className="d-block w-100"  alt="Imagen de Comida"/>
+                <img src="src\assets\img\Restaurante hotel.jpeg" className="d-block w-100"  alt="Imagen de Comida"/>
             </div>
             <div className="carousel-item">
-                <img src="/img/Habitacion hotel.jpg" className="d-block w-100" alt="Imagen de la Habitacion"/>
+                <img src="src\assets\img\Habitacion hotel.jpg" className="d-block w-100" alt="Imagen de la Habitacion"/>
         </div>
     </div>
     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
