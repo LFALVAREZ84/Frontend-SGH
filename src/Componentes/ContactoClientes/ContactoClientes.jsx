@@ -4,14 +4,15 @@ import './ContactoClientes.css';
 import MapaTucuman from '../Mapa/Mapa';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import clsx from 'clsx';
 
 const ContactoClientes = () => {
   const ContactoSchema = Yup.object().shape({
-    nombreApellido: Yup.string().required('Campo requerido'.max(40,'maximo 40 caracteres')),
-    email: Yup.string().email('Formato de correo electrónico inválido').required('Campo requerido').max(30,'maximo 30 caracteres').min(5,'minimo 5 caracteres'),
-    telefono: Yup.string().required('Campo requerido').max(15,'maximo 15 caracteres'),
+    nombreApellido: Yup.string().required('Campo requerido').max(40, 'maximo 40 caracteres'),
+    email: Yup.string().email('Formato de correo electrónico inválido').required('Campo requerido').max(30, 'maximo 30 caracteres').min(5, 'minimo 5 caracteres'),
+    telefono: Yup.string().required('Campo requerido').max(15, 'maximo 15 caracteres'),
     motivo: Yup.string().required('Campo requerido'),
-    comentario: Yup.string().required('Campo requerido'),
+    comentario: Yup.string().required('Campo requerido').min(4, 'numero minimo de caracteres').max(400, 'numero maximo de caracteres'),
   });
 
   const initialValues = {
@@ -57,6 +58,8 @@ const ContactoClientes = () => {
                 value={formik.values.nombreApellido}
                 onChange={formik.handleChange}
                 {...formik.getFieldProps("nombreApellido")}
+
+
               />
             </Form.Group>
           </Col>
@@ -70,6 +73,7 @@ const ContactoClientes = () => {
                 maxLength={30}
                 value={formik.values.email}
                 onChange={formik.handleChange}
+                {...formik.getFieldProps("email")}
               />
             </Form.Group>
           </Col>
@@ -82,7 +86,11 @@ const ContactoClientes = () => {
             name="telefono"
             maxLength={15}
             value={formik.values.telefono}
-            onChange={formik.handleChange}
+            onChange={(e) => {
+              const inputValue = e.target.value;
+              const sanitizedInput = inputValue.replace(/[^0-9-+]/g, ''); // Solo permite números, + y -
+              formik.handleChange('telefono')(sanitizedInput);
+            }}
           />
         </Form.Group>
 
@@ -109,6 +117,8 @@ const ContactoClientes = () => {
               as="textarea"
               style={{ height: '200px' }}
               name="comentario"
+              maxLength={400}
+              minLength={4}
               value={formik.values.comentario}
               onChange={formik.handleChange}
             />
