@@ -1,0 +1,30 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Luis Fabian",
+      "apellido": "Alvarez",
+      "email": "lfalvarez@outlook.com.ar",
+      "pasword": "1234"
+    },
+    {
+      "id": 2,
+      "nombre": "Franco Fernando",
+      "apellido": "Alvarez",
+      "email": "ffalvarez@outlook.com.ar",
+      "pasword": "4321"
+    },
+    {
+      "nombre": "lfalvarez",
+      "email": "lfalvarez84@outlook.com.ar",
+      "contraseña": "123456",
+      "id": 3
+    },
+    {
+      "nombre": "gaalvarez",
+      "email": "gaalvarez58@gmail.com",
+      "contraseña": "12345",
+      "id": 4
+    }
+  ]
+}
