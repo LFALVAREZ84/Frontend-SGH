@@ -4,13 +4,13 @@ import './ContactoClientes.css';
 import MapaTucuman from '../Mapa/Mapa';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import clsx from 'clsx';
+import { clsx } from 'clsx';
 
 const ContactoClientes = () => {
   const ContactoSchema = Yup.object().shape({
     nombreApellido: Yup.string().required('Campo requerido').max(40, 'maximo 40 caracteres'),
     email: Yup.string().email('Formato de correo electrónico inválido').required('Campo requerido').max(30, 'maximo 30 caracteres').min(5, 'minimo 5 caracteres'),
-    telefono: Yup.string().required('Campo requerido').max(15, 'maximo 15 caracteres'),
+    telefono: Yup.string().required('Campo requerido').max(15, 'maximo 15 caracteres').matches(/^[0-9-+]+$/, 'Solo se permiten números, + y -'),
     motivo: Yup.string().required('Campo requerido'),
     comentario: Yup.string().required('Campo requerido').min(4, 'numero minimo de caracteres').max(400, 'numero maximo de caracteres'),
   });
@@ -71,9 +71,18 @@ const ContactoClientes = () => {
                 id="email"
                 name="email"
                 maxLength={30}
+                minLength={5}
                 value={formik.values.email}
                 onChange={formik.handleChange}
                 {...formik.getFieldProps("email")}
+                className={clsx(
+                  'form-control',
+                  {
+                    'is-invalid': formik.touched.email && formik.errors.email},
+                    {'is-valid': !formik.errors.email && formik.touched.email
+                  }
+                )}
+                
               />
             </Form.Group>
           </Col>
