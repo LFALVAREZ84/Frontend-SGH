@@ -7,9 +7,9 @@ import * as Yup from 'yup';
 
 const ContactoClientes = () => {
   const ContactoSchema = Yup.object().shape({
-    nombreApellido: Yup.string().required('Campo requerido'),
-    email: Yup.string().email('Formato de correo electrónico inválido').required('Campo requerido'),
-    telefono: Yup.string().required('Campo requerido'),
+    nombreApellido: Yup.string().required('Campo requerido'.max(40,'maximo 40 caracteres')),
+    email: Yup.string().email('Formato de correo electrónico inválido').required('Campo requerido').max(30,'maximo 30 caracteres').min(5,'minimo 5 caracteres'),
+    telefono: Yup.string().required('Campo requerido').max(15,'maximo 15 caracteres'),
     motivo: Yup.string().required('Campo requerido'),
     comentario: Yup.string().required('Campo requerido'),
   });
@@ -51,10 +51,12 @@ const ContactoClientes = () => {
             <Form.Group controlId="nombreApellido">
               <Form.Control
                 type="text"
-                placeholder="Nombre y Apellido"
+                placeholder="Ingrese Nombre y Apellido"
                 name="nombreApellido"
+                maxLength={40}
                 value={formik.values.nombreApellido}
                 onChange={formik.handleChange}
+                {...formik.getFieldProps("nombreApellido")}
               />
             </Form.Group>
           </Col>
@@ -62,8 +64,10 @@ const ContactoClientes = () => {
             <Form.Group controlId="email">
               <Form.Control
                 type="email"
-                placeholder="Email"
+                placeholder="Ingresar Email"
+                id="email"
                 name="email"
+                maxLength={30}
                 value={formik.values.email}
                 onChange={formik.handleChange}
               />
@@ -74,8 +78,9 @@ const ContactoClientes = () => {
         <Form.Group controlId="telefono" className="mb-3">
           <Form.Control
             type="tel"
-            placeholder="Teléfono"
+            placeholder="Ingresar Teléfono"
             name="telefono"
+            maxLength={15}
             value={formik.values.telefono}
             onChange={formik.handleChange}
           />
