@@ -1,11 +1,9 @@
 import React from 'react';
-import { Form, FloatingLabel, Col, Row, Button ,Card} from 'react-bootstrap';
+import { Form, FloatingLabel, Col, Row, Button, Card } from 'react-bootstrap';
 import './ContactoClientes.css';
 import MapaTucuman from '../Mapa/Mapa';
-import {useFormik} from 'formik';
-import * as Yup  from 'yup';
-import clsx from 'clsx';
-
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
 
 const ContactoClientes = () => {
   const ContactoSchema = Yup.object().shape({
@@ -15,7 +13,25 @@ const ContactoClientes = () => {
     motivo: Yup.string().required('Campo requerido'),
     comentario: Yup.string().required('Campo requerido'),
   });
-  
+
+  const initialValues = {
+    email: '',
+    nombreApellido: '',
+    motivo: '',
+    comentario: '',
+  };
+
+  const formik = useFormik({
+    initialValues,
+    validationSchema: ContactoSchema,
+    validateOnChange: true,
+    validateOnBlur: true,
+    onSubmit: (values) => {
+      console.log('Valores de formik', values);
+      // Agrega aquí la lógica para enviar el formulario
+    },
+  });
+
   return (
     <div className='form-container d-flex flex-column align-items-center'>
       <h2 className='mb-4 text-white'>Aquí estamos!</h2>
@@ -29,27 +45,53 @@ const ContactoClientes = () => {
         />
       </div>
       <h3 className='mb-4 text-white'>Escribinos</h3>
-      <Form className='w-75'>
+      <Form className='w-75' onSubmit={formik.handleSubmit} noValidte>
         <Row className="mb-3">
           <Col md={6}>
             <Form.Group controlId="nombreApellido">
-              <Form.Control type="text" placeholder="Nombre y Apellido" />
+              <Form.Control
+                type="text"
+                placeholder="Nombre y Apellido"
+                name="nombreApellido"
+                value={formik.values.nombreApellido}
+                onChange={formik.handleChange}
+              />
             </Form.Group>
           </Col>
           <Col md={6}>
             <Form.Group controlId="email">
-              <Form.Control type="email" placeholder="Email" />
+              <Form.Control
+                type="email"
+                placeholder="Email"
+                name="email"
+                value={formik.values.email}
+                onChange={formik.handleChange}
+              />
             </Form.Group>
           </Col>
         </Row>
 
         <Form.Group controlId="telefono" className="mb-3">
-          <Form.Control type="tel" placeholder="Teléfono" />
+          <Form.Control
+            type="tel"
+            placeholder="Teléfono"
+            name="telefono"
+            value={formik.values.telefono}
+            onChange={formik.handleChange}
+          />
         </Form.Group>
 
         <Form.Group controlId="motivo" className="mb-3">
-          <Form.Control as="select" placeholder="Motivo">
-            <option value="" disabled selected>Selecciona un motivo</option>
+          <Form.Control
+            as="select"
+            placeholder="Motivo"
+            name="motivo"
+            value={formik.values.motivo}
+            onChange={formik.handleChange}
+          >
+            <option disabled value="">
+              Selecciona un motivo
+            </option>
             <option value="consulta">Consulta</option>
             <option value="reserva">Reserva</option>
             <option value="queja">Queja</option>
@@ -58,7 +100,13 @@ const ContactoClientes = () => {
 
         <Form.Group controlId="comentario" className="mb-3">
           <FloatingLabel controlId="floatingTextarea2" label="Su Comentario">
-            <Form.Control as="textarea" style={{ height: '200px' }} />
+            <Form.Control
+              as="textarea"
+              style={{ height: '200px' }}
+              name="comentario"
+              value={formik.values.comentario}
+              onChange={formik.handleChange}
+            />
           </FloatingLabel>
         </Form.Group>
 
@@ -79,9 +127,7 @@ const ContactoClientes = () => {
         </Card.Body>
       </Card>
     </div>
-    
-    );
+  );
 };
 
 export default ContactoClientes;
-
