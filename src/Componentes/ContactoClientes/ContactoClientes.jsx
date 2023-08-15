@@ -52,15 +52,29 @@ const ContactoClientes = () => {
             <Form.Group controlId="nombreApellido">
               <Form.Control
                 type="text"
+                id="nombreApellido"
                 placeholder="Ingrese Nombre y Apellido"
                 name="nombreApellido"
                 maxLength={40}
                 value={formik.values.nombreApellido}
                 onChange={formik.handleChange}
                 {...formik.getFieldProps("nombreApellido")}
+                className={clsx(
+                  'form-control',
+                  {
+                    'is-invalid': formik.touched.nombreApellido && formik.errors.nombreApellido},
+                    {'is-valid': !formik.errors.nombreApellido && formik.touched.nombreApellido
+                  }
+                )}
 
 
               />
+                {  formik.touched.nombreApellido && formik.errors.nombreApellido && (
+                <div className=" text-danger fw-bolder mt-1">
+                  <span role="alert">{formik.errors.nombreApellidoel}</span>
+                </div>
+          
+              )}
             </Form.Group>
           </Col>
           <Col md={6}>
@@ -84,6 +98,13 @@ const ContactoClientes = () => {
                 )}
                 
               />
+            
+              { formik.touched.email && formik.errors.email && (
+                <div className=" text-danger fw-bolder mt-1">
+                  <span role="alert">{formik.errors.email}</span>
+                </div>
+          
+              )}
             </Form.Group>
           </Col>
         </Row>
@@ -91,6 +112,7 @@ const ContactoClientes = () => {
         <Form.Group controlId="telefono" className="mb-3">
           <Form.Control
             type="tel"
+             id="telefono"
             placeholder="Ingresar Teléfono"
             name="telefono"
             maxLength={15}
@@ -100,7 +122,21 @@ const ContactoClientes = () => {
               const sanitizedInput = inputValue.replace(/[^0-9-+]/g, ''); // Solo permite números, + y -
               formik.handleChange('telefono')(sanitizedInput);
             }}
+            {...formik.getFieldProps("telefono")}
+            className={clsx(
+              'form-control',
+              {
+                'is-invalid': formik.touched.telefono && formik.errors.telefono},
+                {'is-valid': !formik.errors.telefono && formik.touched.telefono
+              }
+            )}
           />
+           { formik.touched.telefono && formik.errors.telefono && (
+                <div className=" text-danger fw-bolder mt-1">
+                  <span role="alert">{formik.errors.telefono}</span>
+                </div>
+          
+              )}
         </Form.Group>
 
         <Form.Group controlId="motivo" className="mb-3">
