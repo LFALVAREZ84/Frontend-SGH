@@ -14,12 +14,11 @@ function App() {
         <Carrusel />
         <div className='container'>
           <div className='row'>
-            <a>
-            <img src="src\assets\img\Publicidad Previaje.jpg" class="img-fluid" alt="..."/>
+            <a href='https://previaje.gob.ar/'>
+            <img src="src\assets\img\Publicidad Previaje.jpg" className="img-fluid" alt="publicidad pre-viaje"/>
             </a>
           </div>
         </div>
-        
         <PiedePagina />
       </div>
     </>

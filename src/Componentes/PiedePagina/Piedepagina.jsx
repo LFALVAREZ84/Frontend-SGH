@@ -16,7 +16,7 @@ function PiedePagina() {
         <h6 className='text-uppercase fw-bold mb-4'></h6>
         <Container>
               <p>
-                <a href='...' className='img'>
+                <a href='...' id='img'>
                   <img src='src\assets\img\Logo Hotel.jpg'/>
                 </a>
               </p>
