@@ -5,8 +5,10 @@ nav.navbar{
 img{
     width: 100px;
     height: 100px;
-    justify-content: center;
-    justify-items: center;
+    /*justify-content: center;
+    justify-items: center;*/
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #navbarDropdown1{
