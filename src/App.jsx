@@ -1,5 +1,8 @@
-import Navegador from './Componentes/Navegador/Navegador'
+
+import Administrador from '../src/Paginas/Administrador/Administrador'
+import Navegador from '../src/Componentes/Navegador/Navegador';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   
@@ -7,6 +10,7 @@ function App() {
     <>
       <div>
         <Navegador />
+        <Administrador />
       </div>
     </>
   )
