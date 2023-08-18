@@ -1,6 +1,8 @@
 import Navegador from './Componentes/Navegador/Navegador'
 import PiedePagina from './Componentes/PiedePagina/Piedepagina';
+import Carrusel from './Componentes/Carrusel/Carrusel';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './../src/App.css'
 
 
 function App() {
@@ -9,6 +11,14 @@ function App() {
     <>
       <div>
         <Navegador />
+        <Carrusel />
+        <div className='container-fluid'>
+          <div className='row'>
+            <a href='https://previaje.gob.ar/'>
+            <img src="src\assets\img\Publicidad Previaje.jpg" className="img-fluid d-block w-100" alt="publicidad pre-viaje"/>
+            </a>
+          </div>
+        </div>
         <PiedePagina />
       </div>
     </>
