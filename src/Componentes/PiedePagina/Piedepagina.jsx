@@ -8,11 +8,11 @@ function PiedePagina() {
     <footer className='text-center text-white'>
     <Container>
       <Row>
-        <Col md="3" lg="3" xl="3" className='mx-auto mb-4'>
+        <Col md="4" lg="3" xl="3" className='mx-auto mb-4'>
         <h6 className='text-uppercase fw-bold mb-4'></h6>
         <p><a href="#!" className='text-center text-white'>Politicas generales del hotel</a></p>
         </Col>
-        <Col md="3" lg="3" xl="3" className='mx-auto mb-4'>
+        <Col md="4" lg="3" xl="3" className='mx-auto mb-4'>
         <h6 className='text-uppercase fw-bold mb-4'></h6>
         <Container>
               <p>
@@ -22,7 +22,7 @@ function PiedePagina() {
               </p>
         </Container>
         </Col>
-        <Col md="3" lg="3" xl="3" className='mx-auto mb-4'>
+        <Col md="4" lg="3" xl="3" className='mx-auto mb-4'>
         <h6 className='text-uppercase fw-bold mb-4'></h6>
               <p>
               Gral. Paz 576, San Miguel de Tucumán, Tucumán.
@@ -38,7 +38,7 @@ function PiedePagina() {
     </Container>
     <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)'}}>
     © 2023 Copyright:
-    <a className='text-white' href='https://rollingcodeschool.com/'>
+    <a className='text-white' href='https://rollingcodeschool.com/'><> </>
     RollingCodeSchool.com
     </a>
   </div>

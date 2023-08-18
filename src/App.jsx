@@ -12,10 +12,10 @@ function App() {
       <div>
         <Navegador />
         <Carrusel />
-        <div className='container'>
+        <div className='container-fluid'>
           <div className='row'>
             <a href='https://previaje.gob.ar/'>
-            <img src="src\assets\img\Publicidad Previaje.jpg" className="img-fluid" alt="publicidad pre-viaje"/>
+            <img src="src\assets\img\Publicidad Previaje.jpg" className="img-fluid d-block w-100" alt="publicidad pre-viaje"/>
             </a>
           </div>
         </div>

@@ -1,11 +1,9 @@
-
 footer{
     background-color:  #345b89;
 }
 
 p a{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0px;
     font-family: 'Lora', serif;
     text-decoration: none;
 }
@@ -26,8 +24,4 @@ col {
 a #img{
     height: 0px;
     width: 0px;
-}
-
-/*div{
-    width: 100%;
 }

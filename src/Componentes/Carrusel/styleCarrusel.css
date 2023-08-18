@@ -1,24 +1,30 @@
 .carrousel.item{
-    height: 10px;
+    height: 0px;
     width: 900px;
 }
 
 .d-block{
     height: 500px;
     width: 900%;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 div.contenedorC{
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 img.d-block.w-100{
-    width: 110%;
+    width: 100%;
 }
 
-.carro{
-    margin-left: 0 0 0;
-    margin-right: 0 0 0;
+@media only screen and (max-width: 800px) {
+    .d-block {
+        height: 400px;
+    }
 }
+@media only screen and (max-width: 600px) {
+    .d-block {
+        height: 300px;
+    }
+}        
