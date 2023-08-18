@@ -1,0 +1,36 @@
+nav.navbar{
+    background-color:  #345b89;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    /*justify-content: center;
+    justify-items: center;*/
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#navbarDropdown1{
+    text-justify: center;
+    white-space: pre;
+    color: white;
+    margin-top: 30px;
+    justify-items: center;
+}
+
+#navbarDropdown2{
+    color: white;
+    margin-top: 30px;
+    text-justify: center;
+    justify-items: center;
+}
+
+a.action.nav-link{
+    text-justify: center;
+    white-space: pre;
+    color: white;
+    margin-top: 30px;
+    justify-items: center;
+}
+
