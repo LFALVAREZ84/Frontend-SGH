@@ -7,8 +7,13 @@ img{
     height: 100px;
     /*justify-content: center;
     justify-items: center;*/
+<<<<<<< HEAD
     margin-left: 0px;
     margin-right: 0px;
+=======
+    margin-left: 50px;
+    margin-right: 50px;
+>>>>>>> origin/PiedePagina
 }
 
 #navbarDropdown1{
@@ -17,6 +22,8 @@ img{
     color: white;
     margin-top: 30px;
     justify-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #navbarDropdown2{
@@ -24,6 +31,8 @@ img{
     margin-top: 30px;
     text-justify: center;
     justify-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 a.action.nav-link{
@@ -32,5 +41,7 @@ a.action.nav-link{
     color: white;
     margin-top: 30px;
     justify-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 

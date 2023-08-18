@@ -1,5 +1,7 @@
 import Navegador from './Componentes/Navegador/Navegador'
+import PiedePagina from './Componentes/PiedePagina/Piedepagina';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   
@@ -7,6 +9,7 @@ function App() {
     <>
       <div>
         <Navegador />
+        <PiedePagina />
       </div>
     </>
   )
