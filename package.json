@@ -20,10 +20,14 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-leaflet": "^4.2.1",
     "react-router-dom": "^6.14.2",
     "router": "^1.3.8",
     "yup": "^1.2.0"
+=======
+    "react-router-dom": "^6.14.2"
+>>>>>>> origin/AboutUs
   },
   "devDependencies": {
     "@types/react": "^18.2.14",
@@ -33,6 +37,6 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.1",
-    "vite": "^4.4.0"
+    "vite": "^4.4.8"
   }
 }

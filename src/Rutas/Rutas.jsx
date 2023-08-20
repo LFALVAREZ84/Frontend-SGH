@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {Routes, Route } from 'react-router-dom'
 import InicioDeSesion from '../Componentes/InicioDeSesion/InicioDeSesion'
 import Registro from '../Componentes/Registro/Registro'
@@ -21,3 +22,14 @@ const Rutas = () => {
 }
 
 export default Rutas
+=======
+import React from 'react'
+
+const Rutas = () => {
+  return (
+
+  )
+}
+
+export default Rutas
+>>>>>>> origin/AboutUs
