@@ -1,10 +1,10 @@
 {
   "usuarios": [
     {
-      "nombre": "",
-      "email": "",
-      "contraseña": "",
-      "id": ""
+      "nombre": "lfa",
+      "email": "lfa@lfa.com",
+      "contraseña": "123",
+      "id": 1
     }
   ],
   "inventario": [
