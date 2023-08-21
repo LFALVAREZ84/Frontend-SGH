@@ -6,10 +6,12 @@ const Inventario = () => {
 
     const [habitacion, setHabitaciones] = useState({
         nombre: "",
-        descripcion: "",
+        numero: "",
         precio: "",
-        disponibilidad: "",
-        img: "",
+        descripcion: "",
+        img1: "",
+        img2: "",
+        img3: "",
     })
 
     const handleChange = (e) => {
@@ -40,15 +42,50 @@ const Inventario = () => {
                 <h1 >Inventario de Habitaciones</h1>
                 <Form onSubmit={handleSubmit}>
                     <div className="mb-3">
-                        <label htmlFor="nombre" className="form-label">
+                        <label htmlFor="selectToastPlacement" className="form-label">
                             Nombre
                         </label>
-                        <input 
-                            type="text"
+                        <Form.Select
+                            id="selectToastPlacement"
                             value={habitacion.nombre} 
+                            className="mt-2"
+                            onChange={(e) => setPosition(e.currentTarget.value)}
+                            name="nombre" 
+                        >
+                        {[
+                            'Simple',
+                            'Doble',
+                            'Triple',
+                            'Familiar',
+                        ].map((p) => (
+                        <option key={p} value={p}>
+                         {p}
+                        </option>
+                        ))}
+                        </Form.Select>
+                    </div>
+                    <div className="mb-3">
+                        <label htmlFor="numero" className="form-label">
+                            Numero
+                        </label>
+                        <input 
+                            type="number" 
+                            value={habitacion.numero} 
                             onChange={handleChange} 
                             className="form-control" 
-                            name="nombre" 
+                            name="numero" 
+                        />
+                    </div>
+                    <div className="mb-3">
+                        <label htmlFor="precio" className="form-label">
+                            Precio por día
+                        </label>
+                        <input 
+                            type="number" 
+                            value={habitacion.precio} 
+                            onChange={handleChange} 
+                            className="form-control" 
+                            name="precio" 
                         />
                     </div>
                     <div className="mb-3">
@@ -65,31 +102,47 @@ const Inventario = () => {
                         </textarea>
                     </div>
                     <div className="mb-3">
-                        <label htmlFor="precio" className="form-label">
-                            Precio
+                        <label htmlFor="imagen1" className="form-label">
+                            Url Imagen 1
                         </label>
                         <input 
-                            type="number" 
-                            value={habitacion.precio} 
+                            type="text" 
+                            value={habitacion.img1} 
                             onChange={handleChange} 
                             className="form-control" 
-                            name="precio" 
+                            name="img1" 
                         />
                     </div>
                     <div className="mb-3">
-                        <label htmlFor="disponibilidad" className="form-label">
-                            Disponibilidad
+                        <label htmlFor="imagen2" className="form-label">
+                            Url Imagen 2
                         </label>
                         <input 
-                            type="number" 
-                            value={habitacion.disponibilidad} 
+                            type="texto" 
+                            value={habitacion.img2} 
                             onChange={handleChange} 
                             className="form-control" 
-                            name="disponibilidad" 
+                            name="img2" 
                         />
                     </div>
                     <div className="mb-3">
-                    <Button variant="primary" type="submit">Agregar Habitacion</Button>
+                        <label htmlFor="imagen3" className="form-label">
+                            Url Imagen 3
+                        </label>
+                        <input 
+                            type="texto" 
+                            value={habitacion.img3} 
+                            onChange={handleChange} 
+                            className="form-control" 
+                            name="img3" 
+                        />
+                    </div>
+                    <div>
+                    <Button 
+                            variant="primary" 
+                            type="submit">
+                            Agregar Habitacion
+                    </Button>
                     </div>
                 </Form>
                 </Col>

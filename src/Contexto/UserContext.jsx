@@ -9,11 +9,7 @@ const UserContext = ({children}) => {
   
     const getUsuarios = async () => {
         try {
-<<<<<<< HEAD
             const response = await axios.get("http://localhost:3000/usuarios")
-=======
-            const response = await axios.get("http://localhost:8080/usuarios")
->>>>>>> origin/Login
             console.log(response, "response context")
             setUsuarios(response.data)
         } catch (error) {

@@ -1,63 +1,36 @@
-<<<<<<< HEAD
-import './App.css'
-import {BrowserRouter , Routes , Route} from "react-router-dom";
-import AboutUs from './Paginas/AboutUs/AboutUs';
-=======
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-import Navegador from './Componentes/Navegador/Navegador';
-import Rutas from './Rutas/Rutas';
+import Navegador from './Componentes/Navegador/Navegador'
+import PiedePagina from './Componentes/PiedePagina/Piedepagina';
 import UserContext from './Contexto/UserContext';
+import ContextoDeInventario from './Contexto/ContextoDeInventario';
+import Rutas from './Rutas/Rutas';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './../src/App.css'
 
-
->>>>>>> origin/Login
 
 function App() {
+  
   return (
-<<<<<<< HEAD
     <>
-<<<<<<< HEAD
-      <div>
-        
-      </div>
-    </BrowserRouter>
-=======
-
-  <main className='container-fluid border border-dark border-5'>
-   <BrowserRouter>
-   <div className='border border-danger border-5 n-5'>
-   <Routes>
-    
-    <Route path = "/AboutUs" element={<AboutUs/>}/>
-
-    
-   </Routes>
-      
-    </div>
-  
-   
-   
-   </BrowserRouter>
-  
-  
-  
-  
-  
-  
-  
-  
-  
->>>>>>> origin/AboutUs
-  </main>)
-=======
       <UserContext>
-        <Navegador />
-        <Rutas />
+        <ContextoDeInventario>
+          <Navegador />
+          <Rutas />
+            <div className='container-fluid'>
+              <div className='row'>
+                <a href='https://previaje.gob.ar/'
+                   target="_blank">
+                  <img 
+                    className="img-fluid d-block w-100"
+                    src="src\assets\img\Publicidad Previaje.jpg" 
+                    alt="publicidad pre-viaje"/>
+                </a>
+              </div>
+            </div>
+          <PiedePagina />
+        </ContextoDeInventario>
       </UserContext>
-    </> 
+    </>
   );
->>>>>>> origin/Login
 }
 
-export default App;
+export default App

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -48,14 +47,3 @@ function PiedePagina() {
 }
 
 export default PiedePagina;
-=======
-
-
-const piedepagina = () => {
-  return (
-    <div>PieDePagina</div>
-  )
-}
-
-export default piedepagina
->>>>>>> origin/Login

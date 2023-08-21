@@ -22,11 +22,12 @@ const handleChange = (e) => {
 const handleSubmit = (e) => {
   e.preventDefault();
   try {
-    const response = axios.post("http://localhost:8080/usuarios", datoUsuario)
-   console.log(response)
+    const respuesta = axios.post("http://localhost:3000/usuarios", 
+    datoUsuario)
+   console.log(respuesta, "Respuesta de Usuarios")
 
   } catch (error) {
-    console.log(error)
+    console.log(error, "Error de Usuarios")
     
   }
 }
@@ -109,10 +110,7 @@ const handleSubmit = (e) => {
       </Nav.Item>
       </Nav>
       </Col>
-     </Row>
-     
-     
-     
+     </Row> 
      
    </Form>
        </Card.Body>
@@ -120,7 +118,6 @@ const handleSubmit = (e) => {
         <Col></Col>
       </Row>
  <br />
-
   
     </Container> 
   );

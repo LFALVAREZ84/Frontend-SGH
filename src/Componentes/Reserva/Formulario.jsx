@@ -1,17 +1,12 @@
 /* eslint-disable no-undef */
 import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
-import Form from 'react-bootstrap/Form';
-import ToggleButton from 'react-bootstrap/ToggleButton';
-import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import {Button, Modal, Form, ToggleButton, ToggleButtonGroup, Container, Row, Col} from 'react-bootstrap';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 
 function Formulario() {
+
+  //Llamar a Modal
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);

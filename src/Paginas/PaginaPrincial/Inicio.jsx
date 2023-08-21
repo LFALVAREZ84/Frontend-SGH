@@ -1,24 +1,25 @@
+import Carrusel from "../../Componentes/Carrusel/Carrusel"
 import { useContext } from 'react'
 import { ContextoInventario } from '../../Contexto/ContextoDeInventario'
-import { Card, Button, Col, Container, Row } from 'react-bootstrap'
-import './../Tarjetas/styleTarjetas.css'
+import { Col, Container, Row, Card, Button } from "react-bootstrap"
 
-const Tarjetas = () => {
+const Inicio = () => {
 
-    const {inventario} = useContext(ContextoInventario)
+  const {inventario} = useContext(ContextoInventario)
     console.log(inventario, "inventario")
 
   return (
     <>
-    <Container fluid="md-2">
-    <Row>
+    <Carrusel />
+    <Container fluid="mb">
+    <Row style={{margin:'5px'}}>
             {inventario === undefined ? 
             "No Hay habitaciones disponibles":
             inventario.map((inventario) => (
                 <>
                 <Col>
                 <Card data-bs-theme="dark" key={inventario.id} style={{ width: '15rem', margin:'10px'}}>
-                <Card.Img variant="top" style={{ height: '10rem' }} src="https://images.mirai.com/INFOROOMS/11068706/nbM3g5Mw71XqrWJe8lk6/nbM3g5Mw71XqrWJe8lk6_large.jpg" />
+                <Card.Img variant="top" style={{ height: '10rem' }} src={inventario.img1} />
                 <Card.Body>
                     <Card.Title>
                         {inventario.nombre}
@@ -39,4 +40,4 @@ const Tarjetas = () => {
   )
 }
 
-export default Tarjetas;
+export default Inicio
