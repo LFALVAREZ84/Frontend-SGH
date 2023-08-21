@@ -4,6 +4,7 @@ import Registro from '../Componentes/Registro/Registro'
 import Formulario from '../Componentes/Reserva/Formulario'
 import Inventario from '../Componentes/Administrador/Inventario/Inventario'
 import Habitaciones from '../Paginas/CatalogoDeHabitaciones/Habitaciones'
+import Descripcion from '../Paginas/CatalogoDeHabitaciones/Descripcion/Descripcion'
 import Carrrusel from '../Componentes/Carrusel/Carrusel'
 import Inicio from '../Paginas/PaginaPrincial/Inicio'
 import ContactoClientes from '../Paginas/Contacto/ContactoClientes'
@@ -19,6 +20,7 @@ const Rutas = () => {
       <Route path="/" element={<Formulario />} />
       <Route path="/Inventario" element={<Inventario />} />  {/* Hacer una ruta privada*/}
       <Route path="/Habitaciones" element={<Habitaciones />} />
+      <Route path="/Descripcion" element={<Descripcion />} />
       <Route path="/Carusel" element={<Carrrusel />} />
       <Route path="/ContactoClientes" element={<ContactoClientes />} />
       <Route path="/Nosotros" element={<Nosotros />} />

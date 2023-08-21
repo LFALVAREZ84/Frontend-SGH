@@ -1,7 +1,7 @@
 import Carrusel from "../../Componentes/Carrusel/Carrusel"
 import { useContext } from 'react'
 import { ContextoInventario } from '../../Contexto/ContextoDeInventario'
-import { Col, Container, Row, Card, Button } from "react-bootstrap"
+import { Container, Row, Col, Card, Button } from "react-bootstrap"
 
 const Inicio = () => {
 
@@ -11,6 +11,8 @@ const Inicio = () => {
   return (
     <>
     <Carrusel />
+    <br/>
+    <h1>Habitaciones</h1>
     <Container fluid="mb">
     <Row style={{margin:'5px'}}>
             {inventario === undefined ? 
