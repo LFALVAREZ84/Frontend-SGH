@@ -16,7 +16,7 @@ function PiedePagina() {
         <h6 className='text-uppercase fw-bold mb-4'></h6>
         <Container>
               <p>
-                <a href='...' id='img'>
+                <a href='/' id='img'>
                   <img src='src\assets\img\Logo Hotel.jpg'/>
                 </a>
               </p>
@@ -38,7 +38,7 @@ function PiedePagina() {
     </Container>
     <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)'}}>
     © 2023 Copyright:
-    <a className='text-white' href='https://rollingcodeschool.com/'><> </>
+    <a className='text-white' href='https://rollingcodeschool.com/'> <></>
     RollingCodeSchool.com
     </a>
   </div>

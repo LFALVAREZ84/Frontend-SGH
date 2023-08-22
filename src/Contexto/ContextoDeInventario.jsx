@@ -9,8 +9,9 @@ const ContextoDeInventario = ({children}) => {
 
     const getInventario = async () => {
         try {
-            const respuesta = await axios.get("http://localhost:3000/inventario")
-            setInventario(respuesta.data)
+            const response = await axios.get("http://localhost:3000/inventario")
+            setInventario(response.data)
+            console.log(response, "response context")
         } catch (error) {
             console.log(error, "Error de Inventario")
         }

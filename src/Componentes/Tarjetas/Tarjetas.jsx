@@ -18,7 +18,7 @@ const Tarjetas = () => {
                 <>
                 <Col>
                 <Card data-bs-theme="dark" key={inventario.id} style={{ width: '15rem', margin:'10px'}}>
-                <Card.Img variant="top" style={{ height: '10rem' }} src="https://images.mirai.com/INFOROOMS/11068706/nbM3g5Mw71XqrWJe8lk6/nbM3g5Mw71XqrWJe8lk6_large.jpg" />
+                <Card.Img variant="top" style={{ height: '10rem' }} src={inventario.img1} />
                 <Card.Body>
                     <Card.Title>
                         {inventario.nombre}

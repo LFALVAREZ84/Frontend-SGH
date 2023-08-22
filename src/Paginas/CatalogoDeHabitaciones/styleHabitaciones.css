@@ -2,7 +2,5 @@ h1{
     font-family: 'Lora', serif;
     margin: 10px;
     text-decoration:solid;
-    text-decoration-color: white ;
-    color: burlywood;
-    background-color: rgb(43, 174, 226);
+    text-align: center;
 }

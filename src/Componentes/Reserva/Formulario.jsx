@@ -11,8 +11,8 @@ function Formulario() {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-    const [startDate, setStartDate] = useState(new Date("08/14/2023"));
-    const [endDate, setEndDate] = useState(new Date("08/14/2023"));
+    const [startDate, setStartDate] = useState(new Date());
+    const [endDate, setEndDate] = useState(new Date());
 
     return (
         <>
@@ -72,6 +72,7 @@ function Formulario() {
             'Simple',
             'Doble',
             'Triple',
+            'Familiar',
           ].map((p) => (
             <option key={p} value={p}>
               {p}
@@ -85,22 +86,24 @@ function Formulario() {
                     <span><label>Fecha de ingreso: </label> </span>
                 
                     <DatePicker
-                        minDate={startDate}
+                        calendarIcon                          
+                        minDate={startDate}                        
                         selected={startDate}
                         onChange={(date) => setStartDate(date)}
-                        selectsStart
                         startDate={startDate}
-                        endDate={endDate}
+                        endDate={endDate}                                        
                         dateFormat="dd/MM/yyyy" 
                         />
                     <br/>
                     <br/>
                     <span><label>Fecha de egreso: </label> </span>
                     <DatePicker
-                        selected={endDate}
+                        default icon
+                        
                         onChange={(date) => setEndDate(date)}
                         selectsEnd
                         startDate={startDate}
+                        selected={endDate}
                         endDate={endDate}
                         minDate={startDate}
                         dateFormat="dd/MM/yyyy"

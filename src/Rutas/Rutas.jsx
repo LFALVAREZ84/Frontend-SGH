@@ -3,10 +3,9 @@ import InicioDeSesion from '../Componentes/InicioDeSesion/InicioDeSesion'
 import Registro from '../Componentes/Registro/Registro'
 import Formulario from '../Componentes/Reserva/Formulario'
 import Inventario from '../Componentes/Administrador/Inventario/Inventario'
-import Adeministrador from './../Componentes/Administrador/Administrador'
+import Administrador from './../Componentes/Administrador/Administrador'
 import Habitaciones from '../Paginas/CatalogoDeHabitaciones/Habitaciones'
 import Descripcion from '../Paginas/CatalogoDeHabitaciones/Descripcion/Descripcion'
-import Carrrusel from '../Componentes/Carrusel/Carrusel'
 import Inicio from '../Paginas/PaginaPrincial/Inicio'
 import ContactoClientes from '../Paginas/Contacto/ContactoClientes'
 import Nosotros from '../Paginas/Nosotros/Nosotros'
@@ -20,10 +19,9 @@ const Rutas = () => {
       <Route path="/Registro" element={<Registro />} />
       <Route path="/" element={<Formulario />} />
       <Route path="/Inventario" element={<Inventario />} />  {/* Hacer una ruta privada*/}
-      <Route path="/Administrador" element={<Adeministrador />} />  {/* Hacer una ruta privada*/}
+      <Route path="/Administrador" element={<Administrador />} />  {/* Hacer una ruta privada*/}
       <Route path="/Habitaciones" element={<Habitaciones />} />
-      <Route path="/Descripcion" element={<Descripcion />} />
-      <Route path="/Carusel" element={<Carrrusel />} />
+      <Route path="/Descripcion/:id" element={<Descripcion />} />
       <Route path="/ContactoClientes" element={<ContactoClientes />} />
       <Route path="/Nosotros" element={<Nosotros />} />
     </Routes>

@@ -18,7 +18,11 @@ const Navegador = () => {
         <Navbar.Collapse id="navbar">
           <Nav className="mx-auto" style={{ maxHeight: '200px' }} navbarScroll>           
               { usuario ? 
-              <Nav.Link className='action' href="/">¡Bienvenido {usuario.nombre}!</Nav.Link> : null} 
+              <Nav.Link className='action' href="/">¡Bienvenido 
+              <Col>
+              {usuario.nombre}!
+              </Col>
+              </Nav.Link> : null} 
               { usuario ? (
               <Nav.Link className='action' href="/InicioDeSesion" onClick={cerrarSesion}>Cerrar Sesion</Nav.Link>
               ) : (
@@ -31,7 +35,7 @@ const Navegador = () => {
             <Nav.Link className='action' href="/">Home</Nav.Link>
               <Container>
               <Row>
-              <Col xs={6} md={3}>
+              <Col>
               <Image src="src\assets\img\Logo Hotel.jpg"  rounded />
               </Col>
               </Row>
