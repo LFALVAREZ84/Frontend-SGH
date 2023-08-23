@@ -17,7 +17,7 @@ const Rutas = () => {
       <Route path='/' element={<Inicio />} />
       <Route path="/InicioDeSesion" element={<InicioDeSesion />} />
       <Route path="/Registro" element={<Registro />} />
-      <Route path="/" element={<Formulario />} />
+      <Route path="/Formulario" element={<Formulario />} />
       <Route path="/Inventario" element={<Inventario />} />  {/* Hacer una ruta privada*/}
       <Route path="/Administrador" element={<Administrador />} />  {/* Hacer una ruta privada*/}
       <Route path="/Habitaciones" element={<Habitaciones />} />

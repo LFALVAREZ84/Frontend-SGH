@@ -7,7 +7,7 @@ const Habitaciones = () => {
   return (
     <>
     <br/>
-    <h1>Habitaciones</h1>
+    <h1>Habitaciones Disponibles</h1>
         <Tarjetas />
     </>
   )

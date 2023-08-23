@@ -1,12 +1,11 @@
 import Carrusel from "../../Componentes/Carrusel/Carrusel"
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useContext } from 'react'
 import { ContextoInventario } from '../../Contexto/ContextoDeInventario'
 import { Container, Row, Col, Card, Button } from "react-bootstrap"
 
 const Inicio = () => {
 
-  let {id} = useParams
   const {inventario} = useContext(ContextoInventario)
 
   return (
