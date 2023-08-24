@@ -31,7 +31,8 @@
     "react-leaflet": "^4.2.1",
     "react-router-dom": "^6.14.2",
     "reactjs-carousel": "^1.16.1",
-    "yup": "^1.2.0"
+    "yup": "^1.2.0",
+    "sweetalert2": "^11.7.12"
   },
   "devDependencies": {
     "@types/react": "^18.2.14",

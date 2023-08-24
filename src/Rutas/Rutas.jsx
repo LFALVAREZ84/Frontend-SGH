@@ -5,10 +5,12 @@ import Formulario from '../Componentes/Reserva/Formulario'
 import Inventario from '../Componentes/Administrador/Inventario/Inventario'
 import Administrador from './../Componentes/Administrador/Administrador'
 import Habitaciones from '../Paginas/CatalogoDeHabitaciones/Habitaciones'
+import Cliente from '../Componentes/Cliente/Cliente'
 import Descripcion from '../Paginas/CatalogoDeHabitaciones/Descripcion/Descripcion'
 import Inicio from '../Paginas/PaginaPrincial/Inicio'
 import ContactoClientes from '../Paginas/Contacto/ContactoClientes'
 import Nosotros from '../Paginas/Nosotros/Nosotros'
+
 
 const Rutas = () => {
   return (
@@ -20,10 +22,12 @@ const Rutas = () => {
       <Route path="/Formulario" element={<Formulario />} />
       <Route path="/Inventario" element={<Inventario />} />  {/* Hacer una ruta privada*/}
       <Route path="/Administrador" element={<Administrador />} />  {/* Hacer una ruta privada*/}
+      <Route path="/Cliente" element={<Cliente />} />
       <Route path="/Habitaciones" element={<Habitaciones />} />
       <Route path="/Descripcion/:id" element={<Descripcion />} />
       <Route path="/ContactoClientes" element={<ContactoClientes />} />
       <Route path="/Nosotros" element={<Nosotros />} />
+      
     </Routes>
     </>
   )

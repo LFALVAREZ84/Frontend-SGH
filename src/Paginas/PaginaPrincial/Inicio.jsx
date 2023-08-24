@@ -46,13 +46,13 @@ const Inicio = () => {
     </Row>
     <div className='container-fluid'>
               <div className='row'>
-                <a href='https://previaje.gob.ar/'
+                <Link href='https://previaje.gob.ar/'
                    target="_blank">
                   <img 
                     className="img-fluid d-block w-100"
                     src="src\assets\img\Publicidad Previaje.jpg" 
                     alt="publicidad pre-viaje"/>
-                </a>
+                </Link>
               </div>
             </div>
     </Container>
